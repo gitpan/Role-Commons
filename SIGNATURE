@@ -14,11 +14,11 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 4175440d636d4112307f498eb9cee4a78c45eada Changes
+SHA1 3bcae94a22d02c5129102202987b792186922121 Changes
 SHA1 0b3e6a108fda26afde82f183650c83ea64da988f HACKING
 SHA1 cc087c3dd6e1b519c680e68cd0231735a68300a0 LICENSE
-SHA1 86ba44b6550876397eabee3b86cd27c78767227b MANIFEST
-SHA1 50c6cb0400d9d891aa46151b25c54439c86264dc META.yml
+SHA1 62b91dd773e7f9c75ec9b9a4bf37aedbcff7e278 MANIFEST
+SHA1 691fe0800b5f01853bf4481bf81c930db9e4b692 META.yml
 SHA1 b9d5dd0b476253d37384aed42664179605286153 Makefile.PL
 SHA1 f74ea1ffaf3f0274a76912096e0d2ed990c84e9e README
 SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
@@ -41,18 +41,19 @@ SHA1 0e0eed2e69d9583081868cf4f220068d0a018568 inc/Scalar/Util.pm
 SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
 SHA1 8105c0510a773b56840995fb4dd2dc64fe9ddaee inc/unicore/Name.pm
 SHA1 36df501c7c9b73c282c5174ed54d8283b2f2cbf2 inc/utf8.pm
-SHA1 c7e5a2a26fdd9e6663c65c585edc5f9844326fd6 lib/Object/AUTHORITY.pm
-SHA1 e487a4efe094436857f255d3751df43fe7a5017a lib/Object/Tap.pm
-SHA1 6301dad88edc945947ba63e11417a36b1557cb97 lib/Role/Commons.pm
-SHA1 81e78c0fede6c5390fdc9db75e1c550be3c66587 lib/Role/Commons/Authority.pm
-SHA1 f62ea84f220c3ce947688fd93418b7a455bfbc68 lib/Role/Commons/ObjectID.pm
-SHA1 162354b5b2ab62d7d0dba650810f7d2191c74dea lib/Role/Commons/Tap.pm
-SHA1 87cacbfb67b338324ba9068911c5c16736835335 lib/authority/shared.pm
-SHA1 22039c157551d4f050abdb018c9d5eed45cb639a meta/changes.pret
+SHA1 fe353e085f33ce30ec4ba532347d6907a05fdcea lib/Object/AUTHORITY.pm
+SHA1 31b9c5b78d466648ca3c7decc8b3c1bb212892fa lib/Object/Tap.pm
+SHA1 bb864e5dcdba852edc73fd8e464462712fcf7e60 lib/Role/Commons.pm
+SHA1 3c3589df358a927236a180ea1bd790c0f3225ed3 lib/Role/Commons/Authority.pm
+SHA1 8bb55e334b019929cf94c3fb7c4ada5e689da109 lib/Role/Commons/ObjectID.pm
+SHA1 a903937ff1b8dff6db14f0da9f4b6114dc77ad6b lib/Role/Commons/Tap.pm
+SHA1 10cc001cd228a52e46c773d40ffadfe32cc3f12c lib/authority/shared.pm
+SHA1 51eff5dd097ba6a64c757580d940f3359a7d46de meta/changes.pret
 SHA1 38764870016edd7de4547fdb06662c0161e60a51 meta/doap.pret
 SHA1 7e794eb159e8c829d59c93fc8f68a26ce971775e meta/makefile.pret
 SHA1 a151cff74b5f29c00381a14d4ec8726e3763b6b2 meta/people.pret
 SHA1 53acb49d3d14625252221e3e21b6666fe48d0e1e t/01basic.t
+SHA1 ba9b56441d49ffc9e58bafb1d377b2eed623f70f t/02oaa.t
 SHA1 304c22f406f9c3595fdceaa80136c01adc37709d t/Object-AUTHORITY/01basic.t
 SHA1 6f9bab9fa817005dc0e07df8896b283acb54a449 t/Object-AUTHORITY/02return.t
 SHA1 6b2e2e7acea0853e3cd0232d6c7de61c35df7e49 t/Object-AUTHORITY/03croak.t
@@ -64,7 +65,7 @@ SHA1 4d458f9f5a92ab5fdfbd7f0aa360353e3137c331 t/authority-shared/02as.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAlCK/loACgkQzr+BKGoqfTlzXgCggfVN6frsvdpJ2BHWsLdjhQ0F
-3ocAnRQdpjVLyzUr/DQPCRGu2yUoow0/
-=vj+e
+iEYEARECAAYFAlCQ+gMACgkQzr+BKGoqfTkz2ACeIp/oFqty7bbetjPCm59gVV02
+4ooAn0Z7XgWIsHGGhDJXyizXRWA74f3O
+=x88r
 -----END PGP SIGNATURE-----
