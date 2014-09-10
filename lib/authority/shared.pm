@@ -1,7 +1,11 @@
+use 5.006;
+use strict;
+use warnings;
+
 package authority::shared;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.101';
+our $VERSION   = '0.102';
 
 use Role::Commons ();
 use Role::Commons::Authority ();

@@ -4,13 +4,16 @@ Role-Commons
 Created:      2012-10-12
 Home page:    <https://metacpan.org/release/Role-Commons>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Role-Commons>
-Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
+Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
-0.101  2012-10-26
+0.102	2014-09-10
 
- - (Addition) Provide &Object::AUTHORITY::AUTHORITY function. It seems
+ [ Packaging ]
+ - Switch to Dist::Inkt.
+
+0.101	2012-10-26
+
+ - Added: Provide &Object::AUTHORITY::AUTHORITY function. It seems
    Web::Magic was relying on it.
 
-0.100  2012-10-26  # Initial release
-
-
+0.100	2012-10-26	Initial release

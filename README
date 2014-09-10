@@ -1,6 +1,6 @@
 NAME
-    Role::Commons - roles that can be commonly used, for the mutual benefit
-    of all
+    Role::Commons - roles that can be commonly used, for the mutual benefit of
+    all
 
 SYNOPSIS
      use 5.010;
@@ -52,15 +52,15 @@ DESCRIPTION
 
   Roles
     Role::Commons::Authority
-        Sets up a "AUTHORITY" method for your class which is conceptually a
-        little like "VERSION".
+        Sets up a `AUTHORITY` method for your class which is conceptually a
+        little like `VERSION`.
 
     Role::Commons::ObjectID
-        Provides an "object_id" method for your class which returns a unique
+        Provides an `object_id` method for your class which returns a unique
         identifier for each object.
 
     Role::Commons::Tap
-        Provides a "tap" method for your class, inspired by Ruby's method of
+        Provides a `tap` method for your class, inspired by Ruby's method of
         the same name. Helpful for writing chained method calls.
 
   Obsolescence
@@ -86,8 +86,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2012 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
