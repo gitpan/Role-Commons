@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "roles that can be commonly used, for the mutual benefit of all",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Moose::Meta::Class::__ANON__::SERIAL::7 version , CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.142690",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -20,22 +20,22 @@ my $meta = {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
                         runtime => {
                           requires => {
-                            "Class::Load"  => 0,
-                            "Moo::Role"    => 0,
-                            "Object::ID"   => 0,
-                            "Scalar::Does" => 0.006,
+                            "match::simple"   => 0,
+                            "Module::Runtime" => 0,
+                            "Moo::Role"       => 0,
+                            "Object::ID"      => 0,
+                            "perl"            => 5.008,
+                            "Types::Standard" => "1.000000",
                           },
                         },
                         test => { requires => { "Test::More" => 0.61 } },
                       },
   "provides"       => {
-                        "authority::shared"        => { file => "lib/authority/shared.pm", version => 0.102 },
-                        "Object::AUTHORITY"        => { file => "lib/Object/AUTHORITY.pm", version => 0.102 },
-                        "Object::Tap"              => { file => "lib/Object/Tap.pm", version => 0.102 },
-                        "Role::Commons"            => { file => "lib/Role/Commons.pm", version => 0.102 },
-                        "Role::Commons::Authority" => { file => "lib/Role/Commons/Authority.pm", version => 0.102 },
-                        "Role::Commons::ObjectID"  => { file => "lib/Role/Commons/ObjectID.pm", version => 0.102 },
-                        "Role::Commons::Tap"       => { file => "lib/Role/Commons/Tap.pm", version => 0.102 },
+                        "Object::AUTHORITY"        => { file => "lib/Object/AUTHORITY.pm", version => 0.103 },
+                        "Role::Commons"            => { file => "lib/Role/Commons.pm", version => 0.103 },
+                        "Role::Commons::Authority" => { file => "lib/Role/Commons/Authority.pm", version => 0.103 },
+                        "Role::Commons::ObjectID"  => { file => "lib/Role/Commons/ObjectID.pm", version => 0.103 },
+                        "Role::Commons::Tap"       => { file => "lib/Role/Commons/Tap.pm", version => 0.103 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -44,9 +44,9 @@ my $meta = {
                                         },
                         homepage     => "https://metacpan.org/release/Role-Commons",
                         license      => ["http://dev.perl.org/licenses/"],
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Role-Commons/project",
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/Role-Commons/project",
                       },
-  "version"        => 0.102,
+  "version"        => 0.103,
 };
 
 my %dynamic_config;
@@ -58,7 +58,7 @@ my %WriteMakefileArgs = (
 	VERSION    => $meta->{version},
 	EXE_FILES  => [ map $_->{file}, values %{ $meta->{x_provides_scripts} || {} } ],
 	NAME       => do { my $n = $meta->{name}; $n =~ s/-/::/g; $n },
-	test       => { TESTS => "t/*.t t/Object-AUTHORITY/*.t t/Object-Tap/*.t t/authority-shared/*.t" },
+	test       => { TESTS => "t/*.t t/Object-AUTHORITY/*.t" },
 	%dynamic_config,
 );
 

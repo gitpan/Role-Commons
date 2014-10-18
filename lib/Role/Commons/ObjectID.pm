@@ -1,14 +1,17 @@
-package Role::Commons::ObjectID;
-
+use 5.008;
 use strict;
 use warnings;
-use Moo::Role;
-use Object::ID qw( object_id );
+
+package Role::Commons::ObjectID;
 
 BEGIN {
+	use Moo::Role;
 	$Role::Commons::ObjectID::AUTHORITY = 'cpan:TOBYINK';
-	$Role::Commons::ObjectID::VERSION   = '0.102';
+	$Role::Commons::ObjectID::VERSION   = '0.103';
 }
+
+# deliberately load this *after* Moo::Role
+use Object::ID qw( object_id );
 
 our $setup_for_class = sub {
 	my ($role, $package, %args) = @_;
@@ -59,7 +62,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012, 2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

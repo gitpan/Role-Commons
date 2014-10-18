@@ -12,7 +12,9 @@
 <http://purl.org/NET/cpan-uri/dist/Role-Commons/project>
 	a                    doap:Project;
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/tobyink>;
-	doap-deps:runtime-requirement [ doap-deps:on "Scalar::Does 0.006"^^doap-deps:CpanId ], [ doap-deps:on "Moo::Role"^^doap-deps:CpanId ], [ doap-deps:on "Object::ID"^^doap-deps:CpanId ], [ doap-deps:on "Class::Load"^^doap-deps:CpanId ];
+	doap-deps:runtime-requirement [ doap-deps:on "perl 5.008"^^doap-deps:CpanId ], [
+		doap-deps:on "Types::Standard 1.000000"^^doap-deps:CpanId;
+	], [ doap-deps:on "Moo::Role"^^doap-deps:CpanId ], [ doap-deps:on "Object::ID"^^doap-deps:CpanId ], [ doap-deps:on "Module::Runtime"^^doap-deps:CpanId ], [ doap-deps:on "match::simple"^^doap-deps:CpanId ];
 	doap-deps:test-requirement [ doap-deps:on "Test::More 0.61"^^doap-deps:CpanId ];
 	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=Role-Commons>;
 	doap:created         "2012-10-12"^^xsd:date;
@@ -23,7 +25,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Role-Commons";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Role-Commons/v_0-100>, <http://purl.org/NET/cpan-uri/dist/Role-Commons/v_0-101>, <http://purl.org/NET/cpan-uri/dist/Role-Commons/v_0-102>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Role-Commons/v_0-100>, <http://purl.org/NET/cpan-uri/dist/Role-Commons/v_0-101>, <http://purl.org/NET/cpan-uri/dist/Role-Commons/v_0-102>, <http://purl.org/NET/cpan-uri/dist/Role-Commons/v_0-103>;
 	doap:shortdesc       "roles that can be commonly used, for the mutual benefit of all".
 
 <http://purl.org/NET/cpan-uri/dist/Role-Commons/v_0-100>
@@ -62,6 +64,35 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Role-Commons-0.102.tar.gz>;
 	doap:revision        "0.102"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Role-Commons/v_0-103>
+	a                    doap:Version;
+	dc:identifier        "Role-Commons-0.103"^^xsd:string;
+	dc:issued            "2014-10-18"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Change;
+			rdfs:label "Stop using Scalar::Does.";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "use match::simple.";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "Recommend Object::Tap/Object::Util over Role::Commons::Tap.";
+		], [
+			a doap-changeset:Removal;
+			rdfs:label "The obsolete authority::shared module is now gone.";
+		], [
+			a doap-changeset:Removal;
+			rdfs:label "The obsolete Object::Tap module is now gone (though the namespace has been recycled by MSTROUT).";
+		], [
+			a doap-changeset:Packaging;
+			rdfs:label "Fix dependency information.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Role-Commons-0.103.tar.gz>;
+	doap:revision        "0.103"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;

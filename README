@@ -67,9 +67,8 @@ DESCRIPTION
     Role-Commons is the successor for my older projects: authority-shared,
     Object-AUTHORITY, Object-DOES, Object-Role, and Object-Tap.
 
-    Role-Commons includes the following (deprecated) modules for the sake of
-    backwards compatibility. I expect to phase them out around 2014.
-    authority::shared, Object::AUTHORITY, Object::Tap.
+    Role-Commons bundles Object::AUTHORITY for the sake of backwards
+    compatibility. This is being phased out.
 
 BUGS
     Please report any bugs to
@@ -84,7 +83,7 @@ AUTHOR
     Toby Inkster <tobyink@cpan.org>.
 
 COPYRIGHT AND LICENCE
-    This software is copyright (c) 2012 by Toby Inkster.
+    This software is copyright (c) 2012, 2014 by Toby Inkster.
 
     This is free software; you can redistribute it and/or modify it under the
     same terms as the Perl 5 programming language system itself.

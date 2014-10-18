@@ -1,8 +1,9 @@
-package Role::Commons;
-
 use 5.008;
 use strict;
 use warnings;
+
+package Role::Commons;
+
 use Carp qw[ carp croak ];
 use Module::Runtime qw[ use_package_optimistically ];
 use Moo::Role qw[];
@@ -10,7 +11,7 @@ use Types::TypeTiny qw[ HashLike ArrayLike ];
 
 BEGIN {
 	$Role::Commons::AUTHORITY = 'cpan:TOBYINK';
-	$Role::Commons::VERSION   = '0.102';
+	$Role::Commons::VERSION   = '0.103';
 }
 
 my @ALL = qw(
@@ -222,11 +223,8 @@ Object-DOES,
 Object-Role, and
 Object-Tap.
 
-Role-Commons includes the following (deprecated) modules for the sake
-of backwards compatibility. I expect to phase them out around 2014.
-L<authority::shared>,
-L<Object::AUTHORITY>,
-L<Object::Tap>.
+Role-Commons bundles L<Object::AUTHORITY> for the sake of backwards
+compatibility. This is being phased out.
 
 =head1 BUGS
 
@@ -249,7 +247,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012, 2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

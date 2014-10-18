@@ -1,14 +1,15 @@
-package Role::Commons::Tap;
-
+use 5.008;
 use strict;
 use warnings;
-use Moo::Role;
+
+package Role::Commons::Tap;
+
 use Carp qw[croak];
-use Scalar::Does qw[ does blessed CODE ARRAY HASH REGEXP STRING SCALAR ];
 
 BEGIN {
+	use Moo::Role;
 	$Role::Commons::Tap::AUTHORITY = 'cpan:TOBYINK';
-	$Role::Commons::Tap::VERSION   = '0.102';
+	$Role::Commons::Tap::VERSION   = '0.103';
 }
 
 our $setup_for_class = sub {
@@ -25,9 +26,9 @@ sub tap
 	{
 		my $next = shift;
 		
-		if (does($next, CODE) or not ref $next)
+		if (ref($next) eq 'CODE' or not ref $next)
 		{
-			my $args = does($_[0], 'ARRAY') ? shift : [];
+			my $args = ref($_[0]) eq 'ARRAY' ? shift : [];
 			my $code = ref $next ? $next : sub { $self->$next(@_) };
 			
 			if ($flags{ EVAL })
@@ -43,7 +44,7 @@ sub tap
 			next PARAM;
 		}
 		
-		if (does($next, SCALAR))
+		if (ref($next) eq 'SCALAR')
 		{
 			if ($$next =~ m{^(no_?)?(.+)$}i)
 			{
@@ -91,6 +92,10 @@ Role::Commons::Tap - an object method which helps with chaining, inspired by Rub
       -> get('http://www.example.com/status');
 
 =head1 DESCRIPTION
+
+B<< DO NOT USE THIS MODULE! >> Use L<Object::Tap> or L<Object::Util>
+instead. They are not drop-in replacements, but a far more sensible way
+to have a C<tap> method.
 
 This module has nothing to do with the Test Anything Protocol (TAP, see
 L<Test::Harness>).
@@ -207,6 +212,8 @@ L<http://rt.cpan.org/Dist/Display.html?Queue=Role-Commons>.
 
 =head1 SEE ALSO
 
+L<Object::Tap>, L<Object::Util>.
+
 L<Role::Commons>.
 
 L<http://tea.moertel.com/articles/2007/02/07/ruby-1-9-gets-handy-new-method-object-tap>,
@@ -218,7 +225,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012, 2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

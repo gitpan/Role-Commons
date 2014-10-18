@@ -1,4 +1,3 @@
-CONTRIBUTING
 COPYRIGHT
 CREDITS
 Changes
@@ -13,19 +12,12 @@ SIGNATURE
 dist.ini
 doap.ttl
 lib/Object/AUTHORITY.pm
-lib/Object/Tap.pm
 lib/Role/Commons.pm
 lib/Role/Commons/Authority.pm
 lib/Role/Commons/ObjectID.pm
 lib/Role/Commons/Tap.pm
-lib/authority/shared.pm
 t/01basic.t
 t/02oaa.t
 t/Object-AUTHORITY/01basic.t
 t/Object-AUTHORITY/02return.t
 t/Object-AUTHORITY/03croak.t
-t/Object-Tap/01basic.t
-t/Object-Tap/02import.t
-t/Object-Tap/03tapping.t
-t/authority-shared/01basic.t
-t/authority-shared/02as.t
