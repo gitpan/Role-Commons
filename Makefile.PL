@@ -28,14 +28,14 @@ my $meta = {
                             "Types::Standard" => "1.000000",
                           },
                         },
-                        test => { requires => { "Test::More" => 0.61 } },
+                        test => { requires => { "Test::Exception" => 0, "Test::More" => 0.61 } },
                       },
   "provides"       => {
-                        "Object::AUTHORITY"        => { file => "lib/Object/AUTHORITY.pm", version => 0.103 },
-                        "Role::Commons"            => { file => "lib/Role/Commons.pm", version => 0.103 },
-                        "Role::Commons::Authority" => { file => "lib/Role/Commons/Authority.pm", version => 0.103 },
-                        "Role::Commons::ObjectID"  => { file => "lib/Role/Commons/ObjectID.pm", version => 0.103 },
-                        "Role::Commons::Tap"       => { file => "lib/Role/Commons/Tap.pm", version => 0.103 },
+                        "Object::AUTHORITY"        => { file => "lib/Object/AUTHORITY.pm", version => 0.104 },
+                        "Role::Commons"            => { file => "lib/Role/Commons.pm", version => 0.104 },
+                        "Role::Commons::Authority" => { file => "lib/Role/Commons/Authority.pm", version => 0.104 },
+                        "Role::Commons::ObjectID"  => { file => "lib/Role/Commons/ObjectID.pm", version => 0.104 },
+                        "Role::Commons::Tap"       => { file => "lib/Role/Commons/Tap.pm", version => 0.104 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -46,7 +46,7 @@ my $meta = {
                         license      => ["http://dev.perl.org/licenses/"],
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/Role-Commons/project",
                       },
-  "version"        => 0.103,
+  "version"        => 0.104,
 };
 
 my %dynamic_config;
